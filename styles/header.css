@@ -1,0 +1,70 @@
+/* HEADER */
+
+header {
+    background-image: linear-gradient(to right, #fff, #86b3b0);
+    height: 75px;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+}
+
+#company-name {
+    margin-left: 20px;
+    color: #000;
+}
+
+#menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+}
+
+#menu-itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #000;
+    font-size: 18px;
+    gap: 50px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-container {
+    display: flex;
+    gap: 25px;
+    font-size: 22px;
+}
+
+.menu-item,
+.social-icon {
+    transition-duration: 300ms;
+}
+
+.menu-item:hover,
+.social-icon:hover {
+    color: #fff;
+}
