@@ -2,7 +2,7 @@
 
 header {
     background-image: linear-gradient(to right, #fff, #86b3b0);
-    height: 75px;
+    height: fit-content;
     width: 100%;
 }
 
@@ -20,8 +20,8 @@ header nav {
 }
 
 #logo {
-    height: 60px;
-    width: 60px;
+    font-size: 50px;
+    padding: 10px 0;
 }
 
 #company-name {

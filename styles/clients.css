@@ -47,10 +47,6 @@
     transition-duration: 300ms;
 }
 
-.client-logo:hover {
-    filter: drop-shadow(5px 5px 5px #202020);
-}
-
 /* RESPONSIVITY */
 
 /* 1100px */
