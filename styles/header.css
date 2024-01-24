@@ -47,8 +47,8 @@ header nav {
     gap: 50px;
 }
 
-a:link,
-a:visited {
+.menu-item:link,
+.menu-item:visited {
     text-decoration: none;
     color: #000;
 }

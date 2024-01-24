@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/products.css">
     <link rel="stylesheet" href="styles/clients.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <script src="https://kit.fontawesome.com/681753a9b2.js" crossorigin="anonymous"></script>
     <title>DevHero Landing Page</title>
 </head>
@@ -22,15 +23,15 @@
             </div>
             <div id="menu-container">
                 <ul id="menu-itens">
-                    <li><a href="#services" class="menu-item">Serviços</a></li>
-                    <li><a href="#products" class="menu-item">Produtos</a></li>
-                    <li><a href="#clients" class="menu-item">Clientes</a></li>
-                    <li><a href="#contact" class="menu-item">Contato</a></li>
+                    <li><a href="#services-section" class="menu-item">Serviços</a></li>
+                    <li><a href="#products-section" class="menu-item">Produtos</a></li>
+                    <li><a href="#clients-section" class="menu-item">Clientes</a></li>
+                    <li><a href="#contact-section" class="menu-item">Contato</a></li>
                 </ul>
                 <div class="social-container">
-                    <a href=""><i class="social-icon fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="social-icon fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="social-icon fa-brands fa-youtube"></i></a>
+                    <a href="" class="menu-item"><i class="social-icon fa-brands fa-instagram"></i></a>
+                    <a href="" class="menu-item"><i class="social-icon fa-brands fa-facebook"></i></a>
+                    <a href="" class="menu-item"><i class="social-icon fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </nav>
@@ -50,7 +51,11 @@
                 </div>
             </div>
             <div class="hero-container-right">
-                <img id="laptop-image" src="images/laptop.png" alt="Imagem de um notebook">
+                <img
+                    id="hero-image"
+                    src="images/hero-laptop.png"
+                    alt="Imagem principal do hero"
+                >
             </div>
         </section>
         <section id="services-section">
@@ -76,37 +81,84 @@
         <section id="products-section">
             <h3 class="products-title">Nossos principais produtos desenvolvidos</h3>
             <div class="products-container">
-                <div class="product-box landing-page">
+
+                <div id="product1" class="product-box landing-page box-animation">
                     <h4 class="product-title">Landing Page</h4>
                 </div>
-                <div class="product-box ecommerce">
-                    <h4 class="product-title">e-Commerce</h4>
+                <div id="product2" class="product-box ecommerce hide">
+                    <h4 class="product-title">Loja Virtual</h4>
                 </div>
-                <div class="product-box app-android">
+                <div id="product3" class="product-box app-android hide">
                     <h4 class="product-title">Aplicativo Android</h4>
                 </div>
-                <div class="product-box app-ios">
+                <div id="product4" class="product-box app-ios hide">
                     <h4 class="product-title">Aplicativo iOS</h4>
                 </div>
-                <div class="product-box dashboard-web">
+                <div id="product5" class="product-box dashboard-web hide">
                     <h4 class="product-title">Dashboard Web</h4>
                 </div>
-                <div class="product-box blog">
+                <div id="product6" class="product-box blog hide">
                     <h4 class="product-title">Blog</h4>
                 </div>
-                <div class="product-box">
-                    <h4 class="product-title">e-Commerce</h4>
+                <div id="product7" class="product-box wordpress hide">
+                    <h4 class="product-title">Sites WordPress</h4>
                 </div>
-                <div class="product-box">
-                    <h4 class="product-title">e-Commerce</h4>
+                <div id="product8" class="product-box app-web hide">
+                    <h4 class="product-title">Aplicativo Web</h4>
                 </div>
             </div>
         </section>
-        <section id="clients"></section>
-        <section id="contact"></section>
+        <section id="clients-section">
+            <div class="clients-counter-container">
+                <p id="clients-counter-number">1+ clientes</p>
+                <p id="clients-counter-text">satisfeitos</p>
+            </div>
+            <div class="main-clients-container">
+                <img src="/images/clients-logo-1.png" alt="" class="client-logo">
+                <img src="/images/clients-logo-2.png" alt="" class="client-logo">
+                <img src="/images/clients-logo-3.png" alt="" class="client-logo">
+                <img src="/images/clients-logo-4.png" alt="" class="client-logo">
+                <img src="/images/clients-logo-5.png" alt="" class="client-logo">
+                <img src="/images/clients-logo-6.png" alt="" class="client-logo">
+            </div>
+        </section>
+        <section id="contact-section">
+            <div class="social-media-container">
+                <div class="icons-container">
+                    <a href=""><i class="social-icon-contact fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="social-icon-contact fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="social-icon-contact fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="" class="phone-icon-contact">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>(19) 99966-9988</p>
+                </a>
+            </div>
+            <div class="form-container">
+                <form action="">
+                    <input type="text" name="name" placeholder="Nome" minlength="1" maxlength="100" required>
+                    <input type="email" name="email" placeholder="E-mail" minlength="1" maxlength="100" required>
+                    <textarea name="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <input type="submit" value="Enviar Mensagem" class="form-button">
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="footer-container">
+            <div id="logo-container-footer">
+                <img src="images/logo.png" alt="Logotipo do site" id="logo-footer">
+                <h1 id="company-name-footer">DevHero</h1>
+            </div>
+            <div class="copyright">
+                <p>Desenvolvidor por Tiago Zanarde</p>
+                <p>2024. Site desenvolvido para portfólio. Informações Fictícias.</p>
+            </div>
+        </div>
     </footer>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/hero.js"></script>
+    <script src="scripts/products.js"></script>
+    <script src="scripts/clients.js"></script>
 </body>
 </html>

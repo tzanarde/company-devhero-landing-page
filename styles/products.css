@@ -20,7 +20,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* gap: 10px; */
     column-gap: 10px;
     row-gap: 10px;
     flex-flow: wrap;
@@ -37,7 +36,6 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    transition-duration: 500ms;
     cursor: pointer;
     border-radius: 10px;
 }
@@ -66,19 +64,46 @@
     background-image: url("/images/product-blog.png");
 }
 
+.wordpress {
+    background-image: url("/images/product-wordpress.png");
+}
+
+.app-web {
+    background-image: url("/images/product-app-web.png");
+}
+
 
 .product-title {
-    transition-duration: 300ms;
     opacity: 0;
     text-align: center;
     font-size: 22px;
 }
 
 .product-box:hover {
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    transition-duration: 500ms;
+    box-shadow: inset 0 0 0 4000px rgba(0,0,0,.6);
+}
+
+.product-box:not(:hover) {
+    transition-duration: 500ms;
 }
 
 .product-box:hover .product-title{
+    transition-duration: 300ms;
     opacity: 1;
     color: #fff;
 }
+
+/* .hide {
+    opacity: 0;
+    transition-duration: 300ms;
+}
+
+@keyframes move {
+    100%  { offset-distance: 100%; }
+}
+
+.box-animation {
+    offset: path("M 300 300 L 100 100 z");
+    animation: move 1s 1;
+} */
