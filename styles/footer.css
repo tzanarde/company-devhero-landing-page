@@ -30,3 +30,19 @@ footer {
     color: #000;
     font-size: 17px;
 }
+
+/* RESPONSIVITY */
+
+/* SMARTPHONES */
+
+@media screen and (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+

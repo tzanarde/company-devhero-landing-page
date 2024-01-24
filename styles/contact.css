@@ -3,7 +3,7 @@
 
 #contact-section {
     background-color: #86b3b0;
-    height: 450px;
+    height: fit-content;
     padding: 100px 75px;
     display: flex;
     flex-direction: row;
@@ -92,4 +92,35 @@ input, textarea {
 
 .main-button:hover {
     background-color: #34b888;
+}
+
+/* RESPONSIVITY */
+
+/* 1100px */
+
+@media screen and (max-width: 1100px) {
+    #contact-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 60px 25px;
+    }
+
+    .social-media-container {
+        gap: 20px;
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
+
+/* SMARTPHONES */
+
+@media screen and (max-width: 767px) {
+    input, textarea {
+        width: 95%;
+    }
 }

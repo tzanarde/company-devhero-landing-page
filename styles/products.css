@@ -2,10 +2,12 @@
 
 #products-section {
     background-color: #86b3b0;
-    height: 700px;
+    height: fit-content;
     padding: 100px 75px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .products-title {
@@ -23,6 +25,8 @@
     column-gap: 10px;
     row-gap: 10px;
     flex-flow: wrap;
+    max-lines: 4;
+    max-width: 1400px;
 }
 
 .product-box {
@@ -107,3 +111,35 @@
     offset: path("M 300 300 L 100 100 z");
     animation: move 1s 1;
 } */
+
+/* RESPONSIVITY */
+
+/* 1100px */
+
+@media screen and (max-width: 1100px) {
+    #products-section {
+        padding: 60px 25px;
+    }
+
+    .product-box {
+        height: 200px;
+        width: 400px;
+    }
+}
+
+/* SMARTPHONES */
+
+@media screen and (max-width: 900px) {
+    #products-section {
+        padding: 60px 25px;
+    }
+
+    .products-container {
+        gap: 15px;
+    }
+
+    .product-box {
+        height: 200px;
+        width: 100%;
+    }
+}

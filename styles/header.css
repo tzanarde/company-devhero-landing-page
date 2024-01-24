@@ -68,3 +68,60 @@ header nav {
 .social-icon:hover {
     color: #fff;
 }
+
+#menu-toggle,
+.menu-icon {
+    display: none;
+    background-color: inherit;
+}
+
+#menu-toggle:checked ~ #menu-itens {
+    transform: scale(1, 1);
+}
+
+/* RESPONSIVITY */
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+    .social-container {
+        display: none;
+    }
+}
+
+/* SMARTPHONES */
+
+@media (max-width: 767px) {
+    #menu-itens {
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        background-color: #86b3b0;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: var(--item-header);
+        font-size: 38px;
+        cursor: pointer;
+    }
+
+    .menu-item {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .social-container {
+        display: none;
+    }
+}
