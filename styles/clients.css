@@ -39,7 +39,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 20px;
 }
 
 .client-logo {
@@ -54,11 +54,12 @@
 @media screen and (max-width: 1100px) {
     #clients-section {
         padding: 60px 25px;
-        gap: 40px;
+        gap: 10px;
     }
 
     .main-clients-container {
-        gap: 50px;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .client-logo {
@@ -71,11 +72,6 @@
 @media screen and (max-width: 767px) {
     #clients-section {
         padding: 60px 25px;
-    }
-
-    .main-clients-container {
-        flex-direction: column;
-        gap: 20px;
     }
 
     .client-logo {
