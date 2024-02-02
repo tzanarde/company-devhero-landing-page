@@ -3,7 +3,7 @@ let heroImage = document.getElementById('hero-image');
 let timeHeroAnimation = 8000;
 
 let heroImages = [];
-heroImages.push('/images/hero-laptop.png', '/images/hero-smartphone.png');
+heroImages.push('images/hero-laptop.png', 'images/hero-smartphone.png');
 
 changeHeroImage();
 
